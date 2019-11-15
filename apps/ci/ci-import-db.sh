@@ -2,5 +2,5 @@
 
 set -e
 
-echo "import DB"
+echo "--> Import DB"
 bash ./acore.sh "db-assembler" "import-all"

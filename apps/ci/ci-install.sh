@@ -2,13 +2,13 @@
 
 set -e
 
-echo "install OS deps (apt-get)"
+echo "--> Install OS deps (apt-get)"
 bash ./acore.sh "install-deps"
 
-echo "install clang-7"
+echo "--> Install clang-7"
 sudo apt-get install clang-7
 
-echo "create config.sh"
+echo "--> Create config.sh"
 cat >>conf/config.sh <<CONFIG_SH
 CCOMPILERC=$CCOMPILERC
 CCOMPILERCXX=$CCOMPILERCXX
